@@ -1,0 +1,18 @@
+<html>
+<head>
+</head>
+<body>
+<script>
+var a=new Array ("red","green","blue","yellow","violet","orange");
+x=0;
+function bg()
+{
+    document.bgColor=a[x];
+    x++;
+    if(x==6)
+        x=0;
+}
+setInterval("bg()",50);
+</script>
+</body>
+</html>

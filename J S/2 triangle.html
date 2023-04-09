@@ -1,0 +1,33 @@
+<html>
+<body>
+<h2>check the triangle</h2>
+<button onclick="checktriangle()">CHECK</button><br>
+<h3 id="p1"></h3>
+<h3 id="p2"></h3>
+</body>
+<script>
+function checktriangle(){ var area;
+var x=prompt("enter side 1"); 
+var y=prompt("enter side 2"); 
+var z=prompt("enter side 3"); 
+if(x==y && y==z)
+{
+    document.getElementById("p1").innerHTML="Equilateral"; 
+    area=(1.732/4)*(x*x); 
+    document.getElementById("p2").innerHTML="Area="+area;
+}
+else if(x==y || y==z || z==x)
+{
+    document.getElementById("p1").innerHTML="Isoceles"; var h=prompt("enter height");
+    var b=prompt("enter base"); area=(1/2)*b*h;
+    document.getElementById("p2").innerHTML="Area="+area;
+}
+else
+{ 
+    document.getElementById("p1").innerHTML="Scalene"; h=prompt("enter height");
+    b=prompt("enter base"); area=(1/2)*b*h;
+    document.getElementById("p2").innerHTML="Area="+area;
+}
+}
+</script>
+</html>

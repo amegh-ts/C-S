@@ -1,0 +1,21 @@
+<html>
+<body>
+Select a country :
+<select id="countries" onchange=getCapital()>
+<option value="0">America</option>
+<option value="1">India</option>
+<option value="2">Spain</option>
+<option value="3">France</option>
+<option value="4">England</option>
+</select>
+<br><br>
+Capital: <input type="text" id="txt">
+<script>
+function getCapital(){
+var capitals=["Washington D.C","New Delhi","Madrid","Paris","London"]; 
+var i = document.getElementById("countries").value; 
+document.getElementById("txt").value = capitals[i];
+}
+</script>
+</body>
+</html>

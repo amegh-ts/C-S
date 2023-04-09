@@ -1,0 +1,21 @@
+<html>
+<body>
+<form name="f">
+enter first year<input type="number" name="y1"> enter second year<input type="number" name="y2">
+<input type="button" value="submit" onclick="year()">
+</form>
+<script> function year(){
+var startYear=f.y1.value; var endYear=f.y2.value;
+for (var year = startYear; year <= endYear; year++){ var d = new Date(year, 0, 1);
+if (d.getDay() === 0){
+document.writeln("1st january being a sunday"+year+"<br>");
+}
+
+}
+}
+
+
+
+</script>
+</body>
+</html>

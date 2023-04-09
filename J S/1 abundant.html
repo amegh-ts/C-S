@@ -1,0 +1,29 @@
+<html>
+<body>
+<h1>
+Enter a number to know whether it is perfect, abundant or deficient
+</h1><br>
+<input type="text" id="num">
+<input type="button" value="find" onclick="checksum()">
+<script>
+function checksum()
+{
+var n=document.getElementById('num').value;
+var sum=0;
+for(var i=0;i<n;i++)
+{
+if(n%i==0)
+{
+sum=sum+i;
+}
+}
+if(sum==n)
+alert("the number is perfect");
+else if(sum>n)
+alert("the number is abundant");
+else
+alert("the number is deficient");
+}
+</script>
+</body>
+</html>

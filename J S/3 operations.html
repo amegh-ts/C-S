@@ -1,0 +1,35 @@
+<html>
+<body>
+<form name="f1">
+Number1:<input type="number" name="n1"><br><br> Number2:<input type="number" name="n2"><br><br>
+<input type="button" value="ADD" onclick="add()"><br><br>
+<input type="button" value="SUBTRACT" onclick="sub()"><br><br>
+<input type="button" value="MULTIPLY" onclick="mult()"><br><br>
+<input type="button" value="DIVIDE" onclick="div()"><br><br>
+Result is:<output id="out"></output>
+</form>
+</body>
+<script> 
+function add(){
+    var a=f1.n1.value; var b=f1.n2.value;
+    var res=parseFloat(a)+parseFloat(b); 
+    document.getElementById("out").value=res;
+}
+function sub(){ 
+    var a=f1.n1.value; var b=f1.n2.value;
+    var res=parseFloat(a)-parseFloat(b); 
+    document.getElementById("out").value=res;
+}
+function mult(){ 
+    var a=f1.n1.value; var b=f1.n2.value;
+    var res=parseFloat(a)*parseFloat(b); 
+    document.getElementById("out").value=res;
+}
+function div(){
+    var a=f1.n1.value;
+    var b=f1.n2.value;
+    var res=parseFloat(a)/parseFloat(b); 
+    document.getElementById("out").value=res;
+}
+</script>
+</html>
