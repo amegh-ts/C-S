@@ -10,7 +10,7 @@ regno<input type="text" name="t1">
 if($_POST){
     $reg = $_POST["t1"];
     echo "<h1 align='center'>MARKLIST</h1>";
-    $con = pg_connect("host=127.0.0.1 dbname=loginx user=postgres password=amz");
+    $con = pg_connect("host=localhost dbname=loginx user=postgres password=amz");
     if($con) {
         echo "Successfully connected";
     }
