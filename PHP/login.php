@@ -16,7 +16,7 @@ if(isset($_POST["submit"]))
     $un=$_POST["username"];
     $pw=$_POST["password"];
     
-    $con=pg_connect("host=127.0.0.1 dbname=loginx port=5432 user=postgres password=amz");
+    $con=pg_connect("host=localhost dbname=loginx port=5432 user=postgres password=amz");
     echo $con;
     $r=pg_query($con,"select * from login where username='$un' and password='$pw'");
     $n=pg_num_rows($r);
